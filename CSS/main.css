@@ -1,0 +1,212 @@
+/* Start Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #2196f3;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  user-select: none;
+}
+/* .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+*/ ::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #0075ff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #005bb5;
+}
+/* End Global Rules */
+/* Start Main Code */
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+.name {
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
+}
+.message {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  text-align: center;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.message span {
+  font-weight: bold;
+  color: #009688;
+}
+.message span::before {
+  content: "[ ";
+}
+.message span::after {
+  content: " ]";
+}
+.level-heading {
+  font-size: 40px;
+  text-align: center;
+  margin: 0 0 15px;
+  background-color: #fff;
+}
+.levels {
+  width: 900px;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.levels .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.levels button {
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.levels button:hover {
+  filter: brightness(0.8);
+}
+.start {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #009688;
+  color: white;
+  padding: 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--main-color);
+  user-select: none;
+}
+input {
+  margin: 15px 0;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 3px solid var(--main-color);
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  caret-color: var(--main-color);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+input:focus {
+  outline: none;
+}
+.upcoming-words {
+  background-color: white;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.upcoming-words div {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+}
+.control span {
+  font-weight: bold;
+  color: #009688;
+}
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+.finish .good {
+  color: var(--main-color);
+}
+.finish .bad {
+  color: red;
+}
+/* End Main Code */
